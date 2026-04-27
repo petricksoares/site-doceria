@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias da Ju</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo-wrap">
+                <img src="logo_9904.PNG" alt="Logo Delícias da Ju" class="logo-img">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#bolos">Bolos</a></li>
+                    <li><a href="#contato" class="btn-contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1 class="hero-title">
+                Bolos feitos<br>
+                <span class="hero-pink">com amor</span>
+                <span class="heart-outline">&#9825;</span>
+            </h1>
+            <p class="hero-desc">
+                Bolos caseiros, feitos com ingredientes
+                selecionados e muito carinho para adoçar
+                seus melhores momentos.
+            </p>
+            <a href="https://wa.me/5586995574989" class="btn-whatsapp" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.836L.057 23.215c-.068.257.007.53.197.72.19.19.464.265.72.197l5.379-1.453A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.853 0-3.601-.498-5.112-1.367l-.368-.213-3.814 1.031 1.032-3.814-.213-.368A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                Fazer encomenda no WhatsApp
+            </a>
+            <p class="hero-note">
+                Encomendas para aniversários, festas e datas especiais.
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="fotocabecario_0036.PNG" alt="Foto de cabeçalho" class="hero-foto">
+        </div>
+    </section>
+
+    <section class="nossos-bolos" id="bolos">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="heart-outline sm">&#9825;</span>
+                Nossos Bolos
+                <span class="heart-outline sm">&#9825;</span>
+            </h2>
+            <p class="section-sub">Feitos com carinho para você</p>
+        </div>
+
+        <div class="bolos-grid">
+            <div class="bolo-card"
+                 data-src="novoBoloDeMaracuja_9551.PNG"
+                 data-nome="Bolo de Maracujá"
+                 data-desc="Leve, úmido e refrescante com cobertura de maracujá. Serve de 15 a 20 pessoas."
+                 data-preco="R$ 45,00"
+                 onclick="abrirModalCard(this)">
+                <div class="card-img-wrap"><img src="novoBoloDeMaracuja_9551.PNG" alt="Bolo de Maracujá"></div>
+                <div class="card-body">
+                    <h3>Bolo de Maracujá</h3>
+                    <p>Leve, úmido e refrescante com cobertura de maracujá. Serve de 15 a 20 pessoas.</p>
+                    <span class="preco">R$ 45,00</span>
+                </div>
+            </div>
+
+            <div class="bolo-card"
+                 data-src="novoBolodeChocolate_9552.PNG"
+                 data-nome="Bolo de Chocolate com Café"
+                 data-desc="Massa fofinha com recheio cremoso e cobertura de chocolate. Serve até 30 pessoas."
+                 data-preco="R$ 80,00"
+                 onclick="abrirModalCard(this)">
+                <div class="card-img-wrap"><img src="novoBolodeChocolate_9552.PNG" alt="Bolo de Chocolate com Café"></div>
+                <div class="card-body">
+                    <h3>Bolo de Chocolate com Café</h3>
+                    <p>Massa fofinha com recheio cremoso e cobertura de chocolate. Serve até 30 pessoas.</p>
+                    <span class="preco">R$ 80,00</span>
+                </div>
+            </div>
+
+            <div class="bolo-card"
+                 data-src="ninhoMorango_9550.PNG"
+                 data-nome="Bolo de Ninho com Morango"
+                 data-desc="Sabor marcante com recheio de ninho e morango fresquinho. Serve até 30 pessoas."
+                 data-preco="R$ 80,00"
+                 onclick="abrirModalCard(this)">
+                <div class="card-img-wrap"><img src="ninhoMorango_9550.PNG" alt="Bolo de Ninho com Morango"></div>
+                <div class="card-body">
+                    <h3>Bolo de Ninho com Morango</h3>
+                    <p>Sabor marcante com recheio de ninho e morango fresquinho. Serve até 30 pessoas.</p>
+                    <span class="preco">R$ 80,00</span>
+                </div>
+            </div>
+
+            <div class="bolo-card"
+                 data-src="cenoura com chocolate_9898.PNG"
+                 data-nome="Bolo de Cenoura com Chocolate"
+                 data-desc="Clássico e irresistível com cobertura de chocolate. Serve de 15 a 20 pessoas."
+                 data-preco="R$ 45,00"
+                 onclick="abrirModalCard(this)">
+                <div class="card-img-wrap"><img src="cenoura com chocolate_9898.PNG" alt="Bolo de Cenoura com Chocolate"></div>
+                <div class="card-body">
+                    <h3>Bolo de Cenoura com Chocolate</h3>
+                    <p>Clássico e irresistível com cobertura de chocolate. Serve de 15 a 20 pessoas.</p>
+                    <span class="preco">R$ 45,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bolos-grid bolos-extras" id="bolos-extras">
+            <div class="bolo-card"
+                 data-src="abacaxi_9899.PNG"
+                 data-nome="Bolo de Abacaxi"
+                 data-desc="Refrescante e delicioso com recheio de abacaxi caramelizado. Serve de 15 a 20 pessoas."
+                 data-preco="R$ 40,00"
+                 onclick="abrirModalCard(this)">
+                <div class="card-img-wrap"><img src="abacaxi_9899.PNG" alt="Bolo de Abacaxi"></div>
+                <div class="card-body">
+                    <h3>Bolo de Abacaxi</h3>
+                    <p>Refrescante e delicioso com recheio de abacaxi caramelizado. Serve de 15 a 20 pessoas.</p>
+                    <span class="preco">R$ 40,00</span>
+                </div>
+            </div>
+
+            <div class="bolo-card"
+                 data-src="chocolateComNinho_9895.PNG"
+                 data-nome="Bolo de Chocolate com Ninho"
+                 data-desc="Combinação irresistível de chocolate e creme de leite ninho. Serve até 20 pessoas."
+                 data-preco="R$ 45,00"
+                 onclick="abrirModalCard(this)">
+                <div class="card-img-wrap"><img src="chocolateComNinho_9895.PNG" alt="Bolo de Chocolate com Ninho"></div>
+                <div class="card-body">
+                    <h3>Bolo de Chocolate com Ninho</h3>
+                    <p>Combinação irresistível de chocolate e creme de leite ninho. Serve até 20 pessoas.</p>
+                    <span class="preco">R$ 45,00</span>
+                </div>
+            </div>
+
+            <div class="bolo-card"
+                 data-src="boloFormigueiro_9900.PNG"
+                 data-nome="Bolo Formigueiro"
+                 data-desc="Fofo e saboroso com granulado de chocolate por toda a massa. Serve de 15 a 20 pessoas."
+                 data-preco="R$ 35,00"
+                 onclick="abrirModalCard(this)">
+                <div class="card-img-wrap"><img src="boloFormigueiro_9900.PNG" alt="Bolo Formigueiro"></div>
+                <div class="card-body">
+                    <h3>Bolo Formigueiro</h3>
+                    <p>Fofo e saboroso com granulado de chocolate por toda a massa. Serve de 15 a 20 pessoas.</p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="ver-todos-wrap">
+            <button class="btn-ver-todos" id="btn-ver-todos" onclick="toggleBolos()">Ver todos os bolos</button>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="sobre-img-wrap">
+            <div class="sobre-foto-circle">
+                <img src="ju Image 2026-04-27 at 17.04.43.jpeg" alt="Foto da Ju">
+            </div>
+            <span class="deco-heart sobre-heart-1">&#9825;</span>
+            <span class="deco-heart sobre-heart-2">&#9825;</span>
+        </div>
+        <div class="sobre-texto">
+            <h2 class="sobre-titulo">
+                Quem faz tudo<br>
+                <span class="hero-pink">com amor</span>
+                <span class="heart-outline">&#9825;</span>
+            </h2>
+            <p>
+                Eu sou a Ju, apaixonada por confeitaria e por transformar
+                ingredientes simples em momentos especiais.<br><br>
+                Cada bolo que faço carrega um pedacinho do meu carinho
+                e dedicação para chegar até você!
+            </p>
+            <div class="sobre-icons">
+                <div class="sobre-icon-item">
+                    <span class="icon-circle">&#9825;</span>
+                    <p>Feito com ingredientes de qualidade</p>
+                </div>
+                <div class="sobre-icon-item">
+                    <span class="icon-circle">🥣</span>
+                    <p>Receitas caseiras e exclusivas</p>
+                </div>
+                <div class="sobre-icon-item">
+                    <span class="icon-circle">🎂</span>
+                    <p>Produção com higiene e muito amor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="logo_9904.PNG" alt="Logo" class="footer-logo">
+                <div>
+                    <p class="footer-nome">Delícias da Ju</p>
+                    <p class="footer-slogan">Feito com amor para adoçar sua vida! &#9825;</p>
+                </div>
+            </div>
+            <div class="footer-contato-col">
+                <p class="footer-titulo">Entre em contato</p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#25D366" style="vertical-align:middle;margin-right:8px;flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.836L.057 23.215c-.068.257.007.53.197.72.19.19.464.265.72.197l5.379-1.453A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.853 0-3.601-.498-5.112-1.367l-.368-.213-3.814 1.031 1.032-3.814-.213-.368A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                    (86) 99557-4989
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C13584" stroke-width="2" style="vertical-align:middle;margin-right:8px;flex-shrink:0"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#C13584" stroke="none"/></svg>
+                    @deliciasdajunaira
+                </p>
+            </div>
+            <div class="footer-pagamento">
+                <p class="footer-titulo">Formas de pagamento</p>
+                <div class="pagamento-icons">
+                    <span class="pix-badge">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#32BCAD"><path d="M9.6 2.4L6 6 2.4 9.6a1.2 1.2 0 000 4.8L6 18l3.6 3.6a1.2 1.2 0 001.7 0L14.4 18l3.6-3.6a1.2 1.2 0 000-4.8L14.4 6l-3.1-3.1a1.2 1.2 0 00-1.7-.5z"/></svg>
+                        pix
+                    </span>
+                    <span class="card-badge">💳</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            © 2026 Delícias da Ju – Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modal-overlay" onclick="fecharModal()">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="fecharModal()">✕</button>
+            <img src="" alt="" id="modal-img" class="modal-img">
+            <div class="modal-info">
+                <h3 id="modal-nome"></h3>
+                <p id="modal-desc"></p>
+                <span class="preco" id="modal-preco"></span>
+                <a href="https://wa.me/5586995574989" class="btn-whatsapp modal-wpp" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.836L.057 23.215c-.068.257.007.53.197.72.19.19.464.265.72.197l5.379-1.453A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.853 0-3.601-.498-5.112-1.367l-.368-.213-3.814 1.031 1.032-3.814-.213-.368A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                    Pedir no WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+
+        let extrasVisiveis = false;
+        function toggleBolos() {
+            const extras = document.getElementById('bolos-extras');
+            const btn = document.getElementById('btn-ver-todos');
+            extrasVisiveis = !extrasVisiveis;
+            if (extrasVisiveis) {
+                extras.classList.add('visivel');
+                btn.textContent = 'Ver menos bolos';
+                setTimeout(() => extras.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+            } else {
+                extras.classList.remove('visivel');
+                btn.textContent = 'Ver todos os bolos';
+                document.getElementById('bolos').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        function abrirModalCard(card) {
+            document.getElementById('modal-img').src   = card.dataset.src;
+            document.getElementById('modal-img').alt   = card.dataset.nome;
+            document.getElementById('modal-nome').textContent  = card.dataset.nome;
+            document.getElementById('modal-desc').textContent  = card.dataset.desc;
+            document.getElementById('modal-preco').textContent = card.dataset.preco;
+            document.getElementById('modal-overlay').classList.add('ativo');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function fecharModal() {
+            document.getElementById('modal-overlay').classList.remove('ativo');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') fecharModal(); });
+    </script>
+</body>
+</html>
